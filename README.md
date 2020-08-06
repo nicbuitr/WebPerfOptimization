@@ -17,12 +17,7 @@ It is built with Html, CSS, JavaScript and used Chrome DevTools to optimize the 
 
 ## How To View:
 
-Just click here:
-<p align="center">
-    <a href="https://nicbuitr.github.io/WebPerfOptimization/">
-        <img src="img/logo.png" alt="Web Performance Project url image">
-    </a>
-</p>
+Just click here: [WebPerfOptimization](https://nicbuitr.github.io/WebPerfOptimization/).
 
 ## How To Download:
 
@@ -68,14 +63,19 @@ Once its deployed go to http://localhost:8080/
 
 #### Desktop - Before/After
 
-<p align="center">
-   <img src="audits/index/PageSpeed Insights - Desktop - Base.png" alt="PageSpeed Insights - Desktop - Base image">
-   <img src="audits/index/PageSpeed Insights - Desktop - Result.png" alt="PageSpeed Insights - Desktop - Result image">
-   <img src="audits/index/Lighthouse - Desktop - Remote - Base.png" alt="Lighthouse - Desktop - Remote - Base image">
-   <img src="audits/index/Lighthouse - Desktop - Remote - Result.png" alt="Lighthouse - Desktop - Remote - Result image">
-</p>
+![PageSpeedInsights-Desktop-Base image](/audits/index/PageSpeedInsights-Desktop-Base.png?raw=true) | ![PageSpeedInsights-Desktop-Result image](/audits/index/PageSpeedInsights-Desktop-Result.png?raw=true)
+:---:|:---:
+
+![Lighthouse-Desktop-Remote-Base image](/audits/index/Lighthouse-Desktop-Remote-Base.png?raw=true) | ![Lighthouse-Desktop-Remote-Result image](/audits/index/Lighthouse-Desktop-Remote-Result.png?raw=true)
+:---:|:---:
 
 #### Mobile - Before/After
+
+![PageSpeedInsights-Mobile-Base image](/audits/index/PageSpeedInsights-Mobile-Base.png?raw=true) | ![PageSpeedInsights-Mobile-Result image](/audits/index/PageSpeedInsights-Mobile-Result.png?raw=true)
+:---:|:---:
+
+![Lighthouse-Mobile-Remote-Base image](/audits/index/Lighthouse-Mobile-Remote-Base.png?raw=true) | ![Lighthouse-Mobile-Remote-Result image](/audits/index/Lighthouse-Mobile-Remote-Result.png?raw=true)
+:---:|:---:
 
 ## Built with:
 
