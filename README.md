@@ -1,4 +1,95 @@
-## Website Performance Optimization portfolio project
+<p align="center">
+    <a href="../../"><img src="img/logo.png" ></a>
+</p>
+
+## Information:
+
+This repo is the final project of [Udacity's Critical Rendering Path course](https://www.udacity.com/course/ud884).
+It is originally cloned from [Website Performance Optimization portfolio project](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
+The purpose was to optimize this online portfolio for speed. In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques learned from the course.
+
+It is built with Html, CSS, JavaScript and used Chrome DevTools to optimize the performance.
+
+## Changes (DD/MM/AAAA)
+
+- 31/07/2020 Initial Upload.
+- 05/08/2020 index.html optimizations and README.md updates.
+
+## How To View:
+
+Just click here:
+<p align="center">
+    <a href="https://nicbuitr.github.io/WebPerfOptimization/">
+        <img src="img/logo.png" alt="Web Performance Project url image">
+    </a>
+</p>
+
+## How To Download:
+
+Just download or clone the repo:
+
+    $ git clone https://github.com/nicbuitr/WebPerfOptimization.git
+
+## Installation
+
+Requirements:
+
+- [Python](https://www.python.org/downloads/) in order to setup local server.	
+
+Once Python is installed, just run:
+
+    $ python -m SimpleHTTPServer 8080
+
+Once its deployed go to http://localhost:8080/
+
+## Optimization results
+
+### index.html improvements
+
+- Completed the metadata
+- Added the async attribute for non-critical resources
+  - favicon.ico
+  - perfmatters.js
+  - All the images
+- Added the attribute media="print" to print.css
+- Downloaded and added the fonts into the style.css
+- Added the attribute font-display: swap; to the fonts to avoid FOIT and ensure that the text remains visible during webfont load
+- Removed the Google Analytics script as it is not being used
+- Removed a couple of CSS styles that were not being used
+- Added h1 header for better semantics
+- Added picture tag elements to use the right image sizes according to the viewport
+- Added alt descriptions to all the images
+- Resized and compressed pizzeria.jpg
+- Moved the locally stored images to cloud storage to be able to request different sizes as parameter
+- Added discernible names to all the anchor links
+- Made sure that all links used https to avoid mixed content
+- Made sure that all the images were displayed with appropriate sizes on all viewports
+- Made sure that no errors were logged on the console
+
+#### Desktop - Before/After
+
+<p align="center">
+   <img src="audits/index/PageSpeed Insights - Desktop - Base.png" alt="PageSpeed Insights - Desktop - Base image">
+   <img src="audits/index/PageSpeed Insights - Desktop - Result.png" alt="PageSpeed Insights - Desktop - Result image">
+   <img src="audits/index/Lighthouse - Desktop - Remote - Base.png" alt="Lighthouse - Desktop - Remote - Base image">
+   <img src="audits/index/Lighthouse - Desktop - Remote - Result.png" alt="Lighthouse - Desktop - Remote - Result image">
+</p>
+
+#### Mobile - Before/After
+
+## Built with:
+
+[![HTML](https://github.com/nicbuitr/f/blob/master/html5.png)](https://www.w3.org/html/) | [![CSS](https://github.com/nicbuitr/f/blob/master/css3.png)](https://www.w3.org/Style/CSS/)  | [![JavaScript](https://github.com/nicbuitr/f/blob/master/javascript.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | [![Visual Studio Code](https://github.com/nicbuitr/f/blob/master/vscode.png)](https://code.visualstudio.com/)
+:---:|:---:|:---:|:---:
+
+
+## License
+
+MIT © [Nicolás Buitrago Castaño](https://github.com/nicbuitr)
+
+## Original Repo's README with further instructions to setup remote server with NGROK
+
+### Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
