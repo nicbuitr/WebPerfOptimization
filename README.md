@@ -97,11 +97,11 @@ Once its deployed go to http://localhost:8080/
 - Added a label to the Pizza Size slider
 - Changed the font color to white for better contrast and accessibility
 - Restructured the HTML tags for better SEO making use of proper HTML Semantics
-- Added the <meta name="viewport"> tag to make the page responsive
+- Added the `<meta name="viewport">` tag to make the page responsive
 - Added the async attribute to bootstrap-grid.css to avoid it causing render blocking
-- Added h1 header for better HTML semantics
+- Added `<h1>` header for better HTML semantics
 - Added picture tag elements to use the right image sizes according to the viewport
-- Added alt descriptions to all the images
+- Added the alt attributes with their descriptions to all the images
 - Moved the locally stored images to cloud storage to be able to request different sizes as parameter
 - Increased the buttons size for better usability on touch devices for better SEO
 - Did not minify nor compress the JavaScript and CSS files as the gaining was negligible
