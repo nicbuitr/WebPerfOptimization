@@ -8,7 +8,7 @@ This repo is the final project of [Udacity's Critical Rendering Path course](htt
 It is originally cloned from [Website Performance Optimization portfolio project](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
 The purpose was to optimize this online portfolio for speed. In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques learned from the course.
 
-It is built with Html, CSS, JavaScript and used Chrome DevTools to optimize the performance.
+It is built with HTML, CSS, JavaScript and used Chrome DevTools to optimize the performance.
 
 ## Changes (DD/MM/AAAA)
 
@@ -18,6 +18,9 @@ It is built with Html, CSS, JavaScript and used Chrome DevTools to optimize the 
 ## How To View:
 
 Just click here: [WebPerfOptimization](https://nicbuitr.github.io/WebPerfOptimization/).
+
+You can compare the lighthouse audit results to the original version of the course which is this one:
+- [cameronwp.github.io - udportfolio](http://cameronwp.github.io/udportfolio/).
 
 ## How To Download:
 
@@ -45,13 +48,12 @@ Once its deployed go to http://localhost:8080/
 - Added the async attribute for non-critical resources
   - favicon.ico
   - perfmatters.js
-  - All the images
 - Added the attribute media="print" to print.css
 - Downloaded and added the fonts into the style.css
 - Added the attribute font-display: swap; to the fonts to avoid FOIT and ensure that the text remains visible during webfont load
 - Removed the Google Analytics script as it is not being used
 - Removed a couple of CSS styles that were not being used
-- Added h1 header for better semantics
+- Added h1 header for better HTML semantics
 - Added picture tag elements to use the right image sizes according to the viewport
 - Added alt descriptions to all the images
 - Resized and compressed pizzeria.jpg
@@ -60,6 +62,7 @@ Once its deployed go to http://localhost:8080/
 - Made sure that all links used https to avoid mixed content
 - Made sure that all the images were displayed with appropriate sizes on all viewports
 - Made sure that no errors were logged on the console
+- Did not minify nor compress the JavaScript and CSS files as the gaining was negligible
 
 #### Desktop - Before/After
 
@@ -76,6 +79,32 @@ Once its deployed go to http://localhost:8080/
 
 ![Lighthouse-Mobile-Remote-Base image](/audits/index/Lighthouse-Mobile-Remote-Base.png?raw=true) | ![Lighthouse-Mobile-Remote-Result image](/audits/index/Lighthouse-Mobile-Remote-Result.png?raw=true)
 :---:|:---:
+
+### pizza.html improvements
+
+- Refactored the page to be responsive
+- JavaScript optimizations:
+  - Removed redundant calculations from the for at changePizzaSizes function and only left the size update inside of it
+  - As all the pizzas have the same size, calculated the new size using the first pizza element and just updated it to all the others instead of calculating the same thing for every pizza which also reduced the interactions with the DOM by using less query selections 
+  - At the pizzas creation used Document Fragment to prevent layout thrashing by appending an element with all the pizzas to the DOM at once, instead of one time for every pizza
+  - At the updatePositions function, moved the scrollTop outside of the for as it only needs to be obtained once, this also prevents layout thrashing as it is a function that triggers layout
+  - To avoid excessive DOM size, the amount of moving pizzas painted is no longer a fixed amount of 200, but instead dynamicaly calculated according to the viewport size e.g: 7 horizontal x 5 vertical = 42 total on a screen of 1440x1147
+  - Deleted the determineDx function, the pizza size is a percentage that dynamically adjusts to the screen size for more efficiency and gets updated once by the sizeSwitcher function, thus, width calculation based upon old and current window width is no longer required
+  - Moving Pizzas position is now set upon creation of each, this eliminates the double iteration by no longer needing to call the updatePositions function sequentially after they are created to run over all of them twice
+- Optimized and reduced the size to pizzeria.jpg
+- The pizza.png size now changes proportionally to ensure that it keeps the correct aspect ratio
+- Moved and centralized all the static styles at "style.css" stylesheet to prevent unnecessary layout triggers by adding them with JavaScript, also for better practices of using stylesheet for styles and JavaScript only for dynamic styles
+- Added a label to the Pizza Size slider
+- Changed the font color to white for better contrast and accessibility
+- Restructured the HTML tags for better SEO making use of proper HTML Semantics
+- Added the `<meta name="viewport">` tag to make the page responsive
+- Added the async attribute to bootstrap-grid.css to avoid it causing render blocking
+- Added `<h1>` header for better HTML semantics
+- Added picture tag elements to use the right image sizes according to the viewport
+- Added the alt attributes with their descriptions to all the images
+- Moved the locally stored images to cloud storage to be able to request different sizes as parameter
+- Increased the buttons size for better usability on touch devices for better SEO
+- Did not minify nor compress the JavaScript and CSS files as the gaining was negligible
 
 ## Built with:
 
