@@ -8,12 +8,14 @@ This repo is the final project of [Udacity's Critical Rendering Path course](htt
 It is originally cloned from [Website Performance Optimization portfolio project](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
 The purpose was to optimize this online portfolio for speed. In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques learned from the course.
 
-It is built with HTML, CSS, JavaScript and used Chrome DevTools to optimize the performance.
+It is built with HTML, CSS, JavaScript and used the Chrome DevTools to optimize the performance.
 
 ## Changes (DD/MM/AAAA)
 
 - 31/07/2020 Initial Upload.
 - 05/08/2020 index.html optimizations and README.md updates.
+- 13/08/2020 pizza.html optimizations and README.md updates.
+- 14/08/2020 further pizza.html optimizations and README.md updates.
 
 ## How To View:
 
@@ -32,13 +34,13 @@ Just download or clone the repo:
 
 Requirements:
 
-- [Python](https://www.python.org/downloads/) in order to setup local server.	
+- [Python](https://www.python.org/downloads/) in order to set up local server.	
 
 Once Python is installed, just run:
 
     $ python -m SimpleHTTPServer 8080
 
-Once its deployed go to http://localhost:8080/
+Once it's deployed go to http://localhost:8080/
 
 ## Optimization results
 
@@ -86,14 +88,18 @@ Once its deployed go to http://localhost:8080/
 - JavaScript optimizations:
   - Removed redundant calculations from the for at changePizzaSizes function and only left the size update inside of it
   - As all the pizzas have the same size, calculated the new size using the first pizza element and just updated it to all the others instead of calculating the same thing for every pizza which also reduced the interactions with the DOM by using less query selections 
-  - At the pizzas creation used Document Fragment to prevent layout thrashing by appending an element with all the pizzas to the DOM at once, instead of one time for every pizza
+  - At both the moving and random pizzas used Document Fragment to prevent layout thrashing by appending an element with all the pizzas to the DOM at once to have just one paint, instead of one time for every pizza
   - At the updatePositions function, moved the scrollTop outside of the for as it only needs to be obtained once, this also prevents layout thrashing as it is a function that triggers layout
-  - To avoid excessive DOM size, the amount of moving pizzas painted is no longer a fixed amount of 200, but instead dynamicaly calculated according to the viewport size e.g: 7 horizontal x 5 vertical = 42 total on a screen of 1440x1147
+  - To avoid excessive DOM size, the amount of moving pizzas painted is no longer a fixed amount of 200, but instead dynamically calculated according to the viewport size e.g: 7 horizontal x 5 vertical = 42 total on a screen of 1440x1147
   - Deleted the determineDx function, the pizza size is a percentage that dynamically adjusts to the screen size for more efficiency and gets updated once by the sizeSwitcher function, thus, width calculation based upon old and current window width is no longer required
   - Moving Pizzas position is now set upon creation of each, this eliminates the double iteration by no longer needing to call the updatePositions function sequentially after they are created to run over all of them twice
+  - Implemented `Intersection Observer`to load up to 102 Random Pizzas upon scroll and avoid excessive DOM size
+  - The newly added Random Pizzas are properly sized according to the current Scroll Size selection
+  - Added opacity transition animation for a better user experience
 - Optimized and reduced the size to pizzeria.jpg
 - The pizza.png size now changes proportionally to ensure that it keeps the correct aspect ratio
 - Moved and centralized all the static styles at "style.css" stylesheet to prevent unnecessary layout triggers by adding them with JavaScript, also for better practices of using stylesheet for styles and JavaScript only for dynamic styles
+- Merged all the bootstrap-grid.css styles that were being used onto "styles.css" to centralize the styles and remove the unused ones
 - Added a label to the Pizza Size slider
 - Changed the font color to white for better contrast and accessibility
 - Restructured the HTML tags for better SEO making use of proper HTML Semantics
@@ -103,8 +109,10 @@ Once its deployed go to http://localhost:8080/
 - Added picture tag elements to use the right image sizes according to the viewport
 - Added the alt attributes with their descriptions to all the images
 - Moved the locally stored images to cloud storage to be able to request different sizes as parameter
+- Added dns-prefetch and preconnect to initialize connection earlier to the images cloud storage
+- For the "Paisano's Pizzeria" image added a padding to its parent and set the image position as absolute to save the space for when the image is loaded to prevent layout shifting
 - Increased the buttons size for better usability on touch devices for better SEO
-- Did not minify nor compress the JavaScript and CSS files as the gaining was negligible
+- Did not minify nor compress the JavaScript and CSS files as the gains were negligible
 
 ## Built with:
 
