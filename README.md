@@ -16,6 +16,7 @@ It is built with HTML, CSS, JavaScript and used the Chrome DevTools to optimize 
 - 05/08/2020 index.html optimizations and README.md updates.
 - 13/08/2020 pizza.html optimizations and README.md updates.
 - 14/08/2020 further pizza.html optimizations and README.md updates.
+- 14/08/2020 minified the CSS and JavaScript files.
 
 ## How To View:
 
