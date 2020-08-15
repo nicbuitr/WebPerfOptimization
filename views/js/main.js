@@ -609,5 +609,4 @@ document.addEventListener('DOMContentLoaded', async function() {
   }
 
   document.querySelector("#movingPizzas").append(docFrag);
-
 });
