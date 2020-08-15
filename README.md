@@ -109,12 +109,9 @@ Once it's deployed go to http://localhost:8080/
 - Added `<h1>` header for better HTML semantics
 - Added picture tag elements to use the right image sizes according to the viewport
 - Added the alt attributes with their descriptions to all the images
-- Moved the locally stored images to cloud storage to be able to request different sizes as parameter
-- Added dns-prefetch and preconnect to initialize connection earlier to the images cloud storage
-- For the "Paisano's Pizzeria" image added a padding to its parent and set the image position as absolute to save the space for when the image is loaded to prevent layout shifting
+- For the "Paisano's Pizzeria" image added a padding to its parent and set the image position as absolute to save the space for when the image is loaded to prevent layout shifting, also preloaded the images
 - Increased the buttons size for better usability on touch devices for better SEO
-- Did not minify nor compress the JavaScript and CSS files as the gains were negligible
-
+- Minified the JavaScript and CSS files for maximum gains
 ## Built with:
 
 [![HTML](https://github.com/nicbuitr/f/blob/master/html5.png)](https://www.w3.org/html/) | [![CSS](https://github.com/nicbuitr/f/blob/master/css3.png)](https://www.w3.org/Style/CSS/)  | [![JavaScript](https://github.com/nicbuitr/f/blob/master/javascript.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | [![Visual Studio Code](https://github.com/nicbuitr/f/blob/master/vscode.png)](https://code.visualstudio.com/)
