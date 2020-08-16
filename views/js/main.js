@@ -487,6 +487,7 @@ var resizePizzas = function(size) {
 
 window.performance.mark("mark_start_generating"); // collect timing data
 
+// Finds the previous loaded pizzas that are hidden and displays them
 function showHiddenPizzas() {
   const hiddenPizzas = pizzasDiv.querySelectorAll(".randomPizzaContainer.hidden");
 
@@ -498,23 +499,11 @@ function showHiddenPizzas() {
 
 this.totalRandomPizzasToLoad = 102;
 this.totalRandomPizzas = 0;
-
-function handleIntersection(entries, observer) {
-  entries.forEach(async (entry) => {
-    if (entry.isIntersecting) {
-      this.loadRandomPizza();
-
-      if (this.totalRandomPizzas > this.totalRandomPizzasToLoad) {
-        observer.unobserve(entry.target);
-        document.querySelector("footer").classList.toggle("visible");
-      }
-    }
-  });
-}
-
 const pizzasDiv = document.querySelector("#randomPizzas");
 const sentinel = document.querySelector("#sentinel");
 
+// Displays previously loaded pizzas, creates a new one and appends it after
+// updating the sentinel's position
 function loadRandomPizza() {
   this.showHiddenPizzas();
 
@@ -530,8 +519,27 @@ function loadRandomPizza() {
   pizzasDiv.append(docFrag);
 }
 
+// A new Random Pizza is loaded everytime the sentinel element is intersected 
+// until the amount of totalRandomPizzasToLoad is loaded
+function handleIntersection(entries, observer) {
+  entries.forEach(async (entry) => {
+    if (entry.isIntersecting) {
+      this.loadRandomPizza();
+
+      if (this.totalRandomPizzas > this.totalRandomPizzasToLoad) {
+        observer.unobserve(entry.target);
+        sentinel.remove();
+        document.querySelector("footer").classList.toggle("visible");
+      }
+    }
+  });
+}
+
 new IntersectionObserver(
-  this.handleIntersection.bind(this)
+  this.handleIntersection.bind(this),
+  {
+    threshold: [0, 1]
+  }
 ).observe(sentinel);
 
 

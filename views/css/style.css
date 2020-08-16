@@ -118,6 +118,11 @@ form {
   clear:both;
 }
 
+#sentinel {
+  height: 50px;
+  width: 100%;
+}
+
  .container {
   background-color: rgba(195, 0, 14, 0.8);
 }

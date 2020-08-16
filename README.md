@@ -17,6 +17,7 @@ It is built with HTML, CSS, JavaScript and used the Chrome DevTools to optimize 
 - 13/08/2020 pizza.html optimizations and README.md updates.
 - 14/08/2020 further pizza.html optimizations and README.md updates.
 - 14/08/2020 minified the CSS and JavaScript files.
+- 15/08/2020 fixed a bug at mobile devices and uploaded before/after audit images.
 
 ## How To View:
 
@@ -112,6 +113,23 @@ Once it's deployed go to http://localhost:8080/
 - For the "Paisano's Pizzeria" image added a padding to its parent and set the image position as absolute to save the space for when the image is loaded to prevent layout shifting, also preloaded the images
 - Increased the buttons size for better usability on touch devices for better SEO
 - Minified the JavaScript and CSS files for maximum gains
+
+#### Desktop - Before/After
+
+![PageSpeedInsights-Desktop-Base image](/audits/pizza/PageSpeedInsights-Desktop-Base.png?raw=true) | ![PageSpeedInsights-Desktop-Result image](/audits/pizza/PageSpeedInsights-Desktop-Result.png?raw=true)
+:---:|:---:
+
+![Lighthouse-Desktop-Remote-Base image](/audits/pizza/Lighthouse-Desktop-Remote-Base.png?raw=true) | ![Lighthouse-Desktop-Remote-Result image](/audits/pizza/Lighthouse-Desktop-Remote-Result.png?raw=true)
+:---:|:---:
+
+#### Mobile - Before/After
+
+![PageSpeedInsights-Mobile-Base image](/audits/pizza/PageSpeedInsights-Mobile-Base.png?raw=true) | ![PageSpeedInsights-Mobile-Result image](/audits/pizza/PageSpeedInsights-Mobile-Result.png?raw=true)
+:---:|:---:
+
+![Lighthouse-Mobile-Remote-Base image](/audits/pizza/Lighthouse-Mobile-Remote-Base.png?raw=true) | ![Lighthouse-Mobile-Remote-Result image](/audits/pizza/Lighthouse-Mobile-Remote-Result.png?raw=true)
+:---:|:---:
+
 ## Built with:
 
 [![HTML](https://github.com/nicbuitr/f/blob/master/html5.png)](https://www.w3.org/html/) | [![CSS](https://github.com/nicbuitr/f/blob/master/css3.png)](https://www.w3.org/Style/CSS/)  | [![JavaScript](https://github.com/nicbuitr/f/blob/master/javascript.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | [![Visual Studio Code](https://github.com/nicbuitr/f/blob/master/vscode.png)](https://code.visualstudio.com/)
