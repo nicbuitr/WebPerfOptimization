@@ -15,7 +15,7 @@ It is built with HTML, CSS, JavaScript and used the Chrome DevTools to optimize 
 This is the scoring chart defined by the instructors provided at [Lesson 4: Final Project - 2. Rubric](https://classroom.udacity.com/courses/ud884/lessons/3056248797/concepts/30802886010923)
 
 <p align="center">
-  <a href="https://i.imgur.com/OWS8JEE.png"><img src="/audits/ProjectScoreCriteria.png?raw=true" ></a>
+  <a href="https://i.imgur.com/OWS8JEE.png" target="_blank" rel="noopener"><img src="/audits/ProjectScoreCriteria.png?raw=true" ></a>
 </p>
 
 ## Changes (DD/MM/AAAA)
@@ -27,6 +27,7 @@ This is the scoring chart defined by the instructors provided at [Lesson 4: Fina
 - 14/08/2020 minified the CSS and JavaScript files.
 - 15/08/2020 fixed a bug at mobile devices and uploaded before/after audit images.
 - 15/08/2020 added the final project's rubric image.
+- 15/08/2020 added before/after collage images.
 
 ## How To View:
 
