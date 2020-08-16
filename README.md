@@ -82,19 +82,11 @@ Once it's deployed go to http://localhost:8080/
 
 #### Desktop - Before/After
 
-![PageSpeedInsights-Desktop-Base image](/audits/index/PageSpeedInsights-Desktop-Base.png?raw=true) | ![PageSpeedInsights-Desktop-Result image](/audits/index/PageSpeedInsights-Desktop-Result.png?raw=true)
-:---:|:---:
-
-![Lighthouse-Desktop-Remote-Base image](/audits/index/Lighthouse-Desktop-Remote-Base.png?raw=true) | ![Lighthouse-Desktop-Remote-Result image](/audits/index/Lighthouse-Desktop-Remote-Result.png?raw=true)
-:---:|:---:
+![before-after-collages-index-desktop-image](/audits/before-after-collages/index-desktop.png?raw=true)
 
 #### Mobile - Before/After
 
-![PageSpeedInsights-Mobile-Base image](/audits/index/PageSpeedInsights-Mobile-Base.png?raw=true) | ![PageSpeedInsights-Mobile-Result image](/audits/index/PageSpeedInsights-Mobile-Result.png?raw=true)
-:---:|:---:
-
-![Lighthouse-Mobile-Remote-Base image](/audits/index/Lighthouse-Mobile-Remote-Base.png?raw=true) | ![Lighthouse-Mobile-Remote-Result image](/audits/index/Lighthouse-Mobile-Remote-Result.png?raw=true)
-:---:|:---:
+![before-after-collages-index-mobile-image](/audits/before-after-collages/index-mobile.png?raw=true)
 
 ### pizza.html improvements
 
@@ -128,19 +120,11 @@ Once it's deployed go to http://localhost:8080/
 
 #### Desktop - Before/After
 
-![PageSpeedInsights-Desktop-Base image](/audits/pizza/PageSpeedInsights-Desktop-Base.png?raw=true) | ![PageSpeedInsights-Desktop-Result image](/audits/pizza/PageSpeedInsights-Desktop-Result.png?raw=true)
-:---:|:---:
-
-![Lighthouse-Desktop-Remote-Base image](/audits/pizza/Lighthouse-Desktop-Remote-Base.png?raw=true) | ![Lighthouse-Desktop-Remote-Result image](/audits/pizza/Lighthouse-Desktop-Remote-Result.png?raw=true)
-:---:|:---:
+![before-after-collages-pizza-desktop-image](/audits/before-after-collages/pizza-desktop.png?raw=true)
 
 #### Mobile - Before/After
 
-![PageSpeedInsights-Mobile-Base image](/audits/pizza/PageSpeedInsights-Mobile-Base.png?raw=true) | ![PageSpeedInsights-Mobile-Result image](/audits/pizza/PageSpeedInsights-Mobile-Result.png?raw=true)
-:---:|:---:
-
-![Lighthouse-Mobile-Remote-Base image](/audits/pizza/Lighthouse-Mobile-Remote-Base.png?raw=true) | ![Lighthouse-Mobile-Remote-Result image](/audits/pizza/Lighthouse-Mobile-Remote-Result.png?raw=true)
-:---:|:---:
+![before-after-collages-pizza-mobile-image](/audits/before-after-collages/pizza-mobile.png?raw=true)
 
 ## Built with:
 
