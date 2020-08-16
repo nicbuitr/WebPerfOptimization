@@ -8,11 +8,13 @@ This repo is the final project of [Udacity's Critical Rendering Path course](htt
 It is originally cloned from [Website Performance Optimization portfolio project](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
 The purpose was to optimize this online portfolio for speed. In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques learned from the course.
 
-It is built with HTML, CSS, JavaScript and used the Chrome DevTools to optimize the performance.
+It is built with HTML, CSS, JavaScript and also used the Chrome DevTools to optimize the performance.
 
 ### Final Project Rubric:
 
-This is the scoring chart defined by the instructors provided at [Lesson 4: Final Project - 2. Rubric](https://classroom.udacity.com/courses/ud884/lessons/3056248797/concepts/30802886010923)
+This is the scoring chart defined by the instructors provided at [Lesson 4: Final Project - 2. Rubric](https://classroom.udacity.com/courses/ud884/lessons/3056248797/concepts/30802886010923).
+
+Also I posted my reply at the course's [Optimized Portfolios Discussion](https://discussions.udacity.com/t/optimized-portfolios/16161/488?u=nicbuitr) as requested at [Lesson 3: Optimizing the CRP - 23. Quiz: The Final Project Submission](https://classroom.udacity.com/courses/ud884/lessons/1469569174/concepts/15669686092589030923).
 
 <p align="center">
   <a href="https://i.imgur.com/OWS8JEE.png" target="_blank" rel="noopener"><img src="/audits/ProjectScoreCriteria.png?raw=true" ></a>
