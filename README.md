@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="../../"><img src="img/logo.png" ></a>
+  <a href="../../"><img src="img/logo.png" ></a>
 </p>
 
 ## Information:
@@ -10,6 +10,14 @@ The purpose was to optimize this online portfolio for speed. In particular, opti
 
 It is built with HTML, CSS, JavaScript and used the Chrome DevTools to optimize the performance.
 
+### Final Project Rubric:
+
+This is the scoring chart defined by the instructors provided at [Lesson 4: Final Project - 2. Rubric](https://classroom.udacity.com/courses/ud884/lessons/3056248797/concepts/30802886010923)
+
+<p align="center">
+  <a href="https://i.imgur.com/OWS8JEE.png"><img src="/audits/ProjectScoreCriteria.png?raw=true" ></a>
+</p>
+
 ## Changes (DD/MM/AAAA)
 
 - 31/07/2020 Initial Upload.
@@ -18,6 +26,7 @@ It is built with HTML, CSS, JavaScript and used the Chrome DevTools to optimize 
 - 14/08/2020 further pizza.html optimizations and README.md updates.
 - 14/08/2020 minified the CSS and JavaScript files.
 - 15/08/2020 fixed a bug at mobile devices and uploaded before/after audit images.
+- 15/08/2020 added the final project's rubric image.
 
 ## How To View:
 
